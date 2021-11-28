@@ -1,0 +1,142 @@
+object Form2: TForm2
+  Left = 649
+  Height = 442
+  Top = 117
+  Width = 466
+  Caption = 'Serial Connection'
+  ClientHeight = 442
+  ClientWidth = 466
+  DesignTimePPI = 125
+  LCLVersion = '2.0.6.0'
+  object ButtonConnect: TButton
+    Left = 88
+    Height = 39
+    Top = 368
+    Width = 117
+    Caption = 'Connect'
+    OnClick = ButtonConnectClick
+    TabOrder = 0
+  end
+  object ButtonDisconnect: TButton
+    Left = 256
+    Height = 38
+    Top = 368
+    Width = 112
+    Caption = 'Disconnect'
+    OnClick = ButtonDisconnectClick
+    TabOrder = 1
+  end
+  object port: TEdit
+    Left = 168
+    Height = 36
+    Top = 72
+    Width = 232
+    TabOrder = 2
+    Text = '/dev/ttyUSB1'
+  end
+  object Label1: TLabel
+    Left = 65
+    Height = 19
+    Top = 81
+    Width = 30
+    Caption = 'Port'
+    ParentColor = False
+  end
+  object vitesse: TEdit
+    Left = 168
+    Height = 36
+    Top = 115
+    Width = 232
+    TabOrder = 3
+    Text = '9600'
+  end
+  object Label2: TLabel
+    Left = 65
+    Height = 19
+    Top = 123
+    Width = 57
+    Caption = 'Vitesse'
+    ParentColor = False
+  end
+  object parity: TEdit
+    Left = 168
+    Height = 36
+    Top = 160
+    Width = 232
+    TabOrder = 4
+    Text = 'N'
+  end
+  object Label3: TLabel
+    Left = 65
+    Height = 19
+    Top = 171
+    Width = 44
+    Caption = 'Parité'
+    ParentColor = False
+  end
+  object databits: TEdit
+    Left = 168
+    Height = 36
+    Top = 208
+    Width = 232
+    TabOrder = 5
+    Text = '8'
+  end
+  object Label4: TLabel
+    Left = 64
+    Height = 19
+    Top = 219
+    Width = 72
+    Caption = 'Data Bits'
+    ParentColor = False
+  end
+  object stopbits: TEdit
+    Left = 168
+    Height = 36
+    Top = 256
+    Width = 232
+    TabOrder = 6
+    Text = '1'
+  end
+  object Label5: TLabel
+    Left = 64
+    Height = 19
+    Top = 267
+    Width = 69
+    Caption = 'Stop bits'
+    ParentColor = False
+  end
+  object voyantConnection: TShape
+    Left = 256
+    Height = 28
+    Top = 20
+    Width = 24
+    Brush.Color = clRed
+    Pen.Color = clNone
+    Shape = stCircle
+  end
+  object connection: TStaticText
+    Left = 128
+    Height = 22
+    Top = 24
+    Width = 120
+    Caption = 'not connected'
+    TabOrder = 7
+  end
+  object esclave: TEdit
+    Left = 168
+    Height = 36
+    Top = 304
+    Width = 232
+    TabOrder = 8
+    Text = '1'
+  end
+  object Label6: TLabel
+    Left = 65
+    Height = 19
+    Top = 312
+    Width = 89
+    Caption = 'Esclave MB'
+    ParentColor = False
+  end
+end

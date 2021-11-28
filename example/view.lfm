@@ -1,0 +1,277 @@
+object Form3: TForm3
+  Left = 832
+  Height = 646
+  Top = 342
+  Width = 626
+  Caption = 'Modbus View'
+  ClientHeight = 646
+  ClientWidth = 626
+  DesignTimePPI = 125
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  LCLVersion = '2.0.6.0'
+  object nbChars: TEdit
+    Left = 544
+    Height = 36
+    Top = 8
+    Width = 51
+    TabOrder = 0
+    Text = '0'
+  end
+  object Label1: TLabel
+    Left = 416
+    Height = 19
+    Top = 16
+    Width = 117
+    Caption = 'Frame Counter'
+    ParentColor = False
+  end
+  object Memo1: TMemo
+    Left = 33
+    Height = 49
+    Top = 56
+    Width = 567
+    ScrollBars = ssVertical
+    TabOrder = 1
+  end
+  object Label2: TLabel
+    Left = 33
+    Height = 19
+    Top = 16
+    Width = 49
+    Caption = 'Frame'
+    ParentColor = False
+  end
+  object startAddress: TEdit
+    Left = 152
+    Height = 36
+    Top = 176
+    Width = 115
+    OnChange = startAddressChange
+    TabOrder = 2
+    Text = '0'
+  end
+  object MBoffset0: TEdit
+    Left = 232
+    Height = 36
+    Top = 264
+    Width = 51
+    OnChange = MBoffset0Change
+    TabOrder = 3
+    Text = '0'
+  end
+  object Label3: TLabel
+    Left = 40
+    Height = 19
+    Top = 184
+    Width = 106
+    Caption = 'Start Address'
+    ParentColor = False
+  end
+  object Label4: TLabel
+    Left = 160
+    Height = 19
+    Top = 272
+    Width = 60
+    Caption = 'offset 0'
+    ParentColor = False
+  end
+  object MBoffset1: TEdit
+    Left = 232
+    Height = 36
+    Top = 312
+    Width = 51
+    OnChange = MBoffset1Change
+    TabOrder = 4
+    Text = '1'
+  end
+  object Label5: TLabel
+    Left = 160
+    Height = 19
+    Top = 320
+    Width = 60
+    Caption = 'offset 1'
+    ParentColor = False
+  end
+  object Shape1: TShape
+    Left = 11
+    Height = 2
+    Top = 129
+    Width = 606
+  end
+  object Label6: TLabel
+    Left = 40
+    Height = 19
+    Top = 144
+    Width = 102
+    Caption = 'Modbus Field'
+    ParentColor = False
+  end
+  object MBfieldLength: TEdit
+    Left = 480
+    Height = 36
+    Top = 176
+    Width = 115
+    OnChange = MBfieldLengthChange
+    TabOrder = 5
+    Text = '10'
+  end
+  object Label7: TLabel
+    Left = 368
+    Height = 19
+    Top = 184
+    Width = 96
+    Caption = 'Field Length'
+    ParentColor = False
+  end
+  object MBoffset2: TEdit
+    Left = 232
+    Height = 36
+    Top = 360
+    Width = 51
+    OnChange = MBoffset2Change
+    TabOrder = 6
+    Text = '2'
+  end
+  object Label8: TLabel
+    Left = 160
+    Height = 19
+    Top = 368
+    Width = 60
+    Caption = 'offset 2'
+    ParentColor = False
+  end
+  object MBoffset3: TEdit
+    Left = 232
+    Height = 36
+    Top = 408
+    Width = 51
+    OnChange = MBoffset3Change
+    TabOrder = 7
+    Text = '3'
+  end
+  object Label9: TLabel
+    Left = 160
+    Height = 19
+    Top = 416
+    Width = 60
+    Caption = 'offset 3'
+    ParentColor = False
+  end
+  object MBoffset4: TEdit
+    Left = 232
+    Height = 36
+    Top = 456
+    Width = 51
+    OnChange = MBoffset4Change
+    TabOrder = 8
+    Text = '4'
+  end
+  object Label10: TLabel
+    Left = 160
+    Height = 19
+    Top = 464
+    Width = 60
+    Caption = 'offset 4'
+    ParentColor = False
+  end
+  object MBoffset5: TEdit
+    Left = 413
+    Height = 36
+    Top = 264
+    Width = 51
+    OnChange = MBoffset5Change
+    TabOrder = 9
+    Text = '5'
+  end
+  object Label11: TLabel
+    Left = 341
+    Height = 19
+    Top = 272
+    Width = 60
+    Caption = 'offset 5'
+    ParentColor = False
+  end
+  object MBoffset6: TEdit
+    Left = 413
+    Height = 36
+    Top = 312
+    Width = 51
+    OnChange = MBoffset6Change
+    TabOrder = 10
+    Text = '6'
+  end
+  object Label12: TLabel
+    Left = 341
+    Height = 19
+    Top = 320
+    Width = 60
+    Caption = 'offset 6'
+    ParentColor = False
+  end
+  object MBoffset7: TEdit
+    Left = 413
+    Height = 36
+    Top = 360
+    Width = 51
+    OnChange = MBoffset7Change
+    TabOrder = 11
+    Text = '7'
+  end
+  object Label13: TLabel
+    Left = 341
+    Height = 19
+    Top = 368
+    Width = 60
+    Caption = 'offset 7'
+    ParentColor = False
+  end
+  object MBoffset8: TEdit
+    Left = 413
+    Height = 36
+    Top = 408
+    Width = 51
+    OnChange = MBoffset8Change
+    TabOrder = 12
+    Text = '8'
+  end
+  object Label14: TLabel
+    Left = 341
+    Height = 19
+    Top = 416
+    Width = 60
+    Caption = 'offset 8'
+    ParentColor = False
+  end
+  object MBoffset9: TEdit
+    Left = 413
+    Height = 36
+    Top = 456
+    Width = 51
+    OnChange = MBoffset9Change
+    TabOrder = 13
+    Text = '9'
+  end
+  object Label15: TLabel
+    Left = 341
+    Height = 19
+    Top = 464
+    Width = 60
+    Caption = 'offset 9'
+    ParentColor = False
+  end
+  object Label16: TLabel
+    Left = 312
+    Height = 19
+    Top = 232
+    Width = 38
+    Caption = 'Data'
+    ParentColor = False
+  end
+  object Shape2: TShape
+    Left = 288
+    Height = 2
+    Top = 251
+    Width = 81
+  end
+end
