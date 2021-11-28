@@ -9,5 +9,5 @@ This code has been tested on linux ( ubuntu and raspbian ).
 
 An example made with lazarus is in the directory example.
 
-A minimal implementation of this object can be found in the simplertuslave folder.
+A minimal implementation of this object can be found in the simplertuslave example.
 
