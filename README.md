@@ -7,7 +7,7 @@ the 4 major command can be used with mbuserialslave:
 - read input registers
 This code has been tested on linux ( ubuntu and raspbian ).
 
-An example made with lazarus is in the directory example.
+An example made with lazarus is in the example directory.
 
 A minimal implementation of this object can be found in the simplertuslave example.
 
