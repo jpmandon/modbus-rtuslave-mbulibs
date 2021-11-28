@@ -326,7 +326,9 @@ begin
                                    begin
                                    FState:=waitSlaveNumber;
                                    FFrameReady:=True;
-                                   Synchronize(@Showstatus);
+                                   EnterCriticalsection(rtuSlaveCriticalSection);
+                                   Showstatus;
+                                   LeaveCriticalsection(rtuSlaveCriticalSection);
                                    if not(FForMe) then
                                      begin
                                      readLeft:=computeNFMFrameLength;
