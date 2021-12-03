@@ -1,6 +1,6 @@
 # modbus-rtuslave-mbulibs
 mbserialslave is a modbus rtu slave object based on mbulib.
-the 4 major commands can be used with mbuserialslave:
+the 4 major commands can be used with mbserialslave:
 - write single register
 - write multiple register
 - read holding registers
