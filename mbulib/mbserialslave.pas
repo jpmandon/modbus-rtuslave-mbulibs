@@ -473,7 +473,7 @@ begin
   case MBfunction of
        MB_FUNC_WRITE_REGISTER:              begin
                                             EnterCriticalsection(rtuSlaveCriticalSection);
-                                            FMBdata[MBaddress-FMBstartAddress]^:=uint16(FRxBuffer[6+(i*2)] shl 8 + FRxBuffer[7+(i*2)]);
+                                            FMBdata[MBaddress-FMBstartAddress]^:=uint16(FRxBuffer[4] shl 8 + FRxBuffer[5]);
                                             if FwriteEvent <> nil then
                                                FwriteEvent(Self);
                                             LeaveCriticalsection(rtuSlaveCriticalSection);
