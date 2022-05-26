@@ -1,0 +1,30 @@
+object Form1: TForm1
+  Left = 825
+  Height = 224
+  Top = 312
+  Width = 569
+  Caption = 'RTU Modbus Slave'
+  ClientHeight = 224
+  ClientWidth = 569
+  DesignTimePPI = 125
+  OnClose = FormClose
+  LCLVersion = '2.0.6.0'
+  object Connect: TButton
+    Left = 230
+    Height = 40
+    Top = 32
+    Width = 114
+    Caption = 'Connect'
+    OnClick = ConnectClick
+    TabOrder = 0
+  end
+  object View: TButton
+    Left = 230
+    Height = 37
+    Top = 104
+    Width = 115
+    Caption = 'Modbus View'
+    OnClick = ViewClick
+    TabOrder = 1
+  end
+end
